@@ -1,0 +1,2 @@
+#!/git/bash
+echo $((128+$TRUEKNOWLEDGE))
