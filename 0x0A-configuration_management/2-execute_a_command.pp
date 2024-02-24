@@ -3,5 +3,5 @@
 exec { 'pkill':
   command     => '/usr/bin/pkill killmenow',
   provider    => 'shell',
-  refreshonly => true,
+  returns     => [0, 1],
 }
