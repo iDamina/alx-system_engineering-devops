@@ -1,3 +1,4 @@
+#!/usr/bin/bash
 echo -e "Updating the system\n"
 
 sudo apt-get update
