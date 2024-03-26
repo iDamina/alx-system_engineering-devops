@@ -14,7 +14,6 @@ if __name__ == '__main__':
     # retrieve the TODO list for the specified employee
     completed_tasks = [title.get("title") for title in to_do if
                        title.get('completed') is True]
-    print(completeted_tasks)
     print("Employee {} is done with tasks({}/{}):".format(usr_info.get("name"),
                                                           len(completed_tasks),
                                                           len(to_do)))
