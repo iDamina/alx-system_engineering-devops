@@ -19,16 +19,16 @@ if __name__ == '__main__':
     todoUrl = url + "/todos"
     response = requests.get(todoUrl)
     tasks = response.json()
-    totalTasks = []
-    completed = 0
+    done_tasks = []
+    done = 0
 
     for task in tasks:
         if task.get('completed'):
-            totalTasks.append(tasks)
-            completed += 1
+            done_tasks.append(task)
+            done += 1
 
     print("Employee {} is done with tasks({}/{}):"
-          .format(employeeName, completed, len(tasks)))
+          .format(employeeName, done, len(tasks)))
 
-    for task in tasks:
+    for task in done_tasks:
         print("\t {}".format(task.get('title')))
