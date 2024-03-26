@@ -4,8 +4,8 @@ A script that interacts with REST API to retrieve information
 about the progress of tasks in the TODO List of a given
 employee ID.
 """
-import sys
 import requests as r
+import sys
 
 if __name__ == '__main__':
     url = 'https://jsonplaceholder.typicode.com/'
